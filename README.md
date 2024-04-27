@@ -1,7 +1,7 @@
 
 # CHAI-SUTTA-BAR [CHAI-SUTTA-BAR Website](https://jessicadollz.github.io/Chai-Sutta-Bar/)
 
-Welcome to the official website of CHAI-SUTTA-BAR, your go-to destination for delightful chai and tasty snacks. 
+Welcome to CHAI-SUTTA-BAR, your go-to destination for delightful chai and tasty snacks. 
 
 ## Table of Contents
 1. [Home](./index.html)
