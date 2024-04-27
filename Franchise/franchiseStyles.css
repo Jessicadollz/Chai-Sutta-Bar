@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    z-index: 9;
+    grid-area: nav;
+}
+
+.cover-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    grid-area: cover;
+}
+
+.cover-container img {
+    max-width: 100%; /* Ensures the image never exceeds the container's width */
+    max-height: 100%; /* Ensures the image never exceeds the container's height */
+    display: block; /* Removes any default inline styling */
+    margin: auto; /* Centers the image horizontally */
+}
+
+/* Franchise Form */
+
+.franchise-form > .grid-container {
+    display: grid;
+    grid-template-areas:
+    'image form'
+    'image form';
+    grid-gap: 0;
+    padding: 0;
+}
+
+.franchise-form > .grid-container > .item1, .item2 {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.franchise-form > .grid-container > .item1 > .form-image {
+    max-width: 100%;
+    height: 120%;
+}
+
+.franchise-form > .grid-container > .item1 { 
+    grid-area: image; 
+}
+
+.franchise-form > .grid-container > .item2 > form > h1 {
+    font-size: 3rem;
+}
+
+.franchise-form > .grid-container > .item2 { 
+    grid-area: form; 
+    transform: translateX(-50%);
+}
+
+.franchise-form > .grid-container > div {
+    text-align: left;
+    font-size: 30px;
+}
+
+.franchise-form > .grid-container > .item1 > img {
+    padding-left: 10%; 
+    width: 65%;
+    height: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.franchise-form > .grid-container > .item2 > form > input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+  /*  transform: translateX(-45%); */
+}
+
+.franchise-form > .grid-container > .item2 > form > .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40%;
+  /*  transform: translateX(-100%); */
+}
+
+.franchise-form > .grid-container > .item2 > form > .button1 {
+    background-color: #672717;
+}
+
+.franchise-form > .grid-container > .item2 > form > input[type=text] {
+    border-radius: 10px;
+    border: 1px solid #672717;
+    color: #672717;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.franchise-form > .grid-container > .item2 > form > input[type=text]:focus {
+    outline: none;
+    border: 1px solid #672717;
+    color: #672717;
+    font-size: small;
+}
+
+.franchise-form > .grid-container > .item2 > form > input::placeholder {
+    color: #672717;
+    font-weight: bold;
+    font-size: small;
+}
+
+/* Why we rock */
+
+.item1 { grid-area: wwr; }
+.item2 { grid-area: ta; }
+.item3 { grid-area: p; }
+.item4 { grid-area: fc; }
+.item5 { grid-area: bv; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'wwr wwr ta p'
+    'wwr wwr fc bv';
+  gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: justify;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.why-we-rock > .grid-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.why-we-rock > .grid-container > .item1 {
+    font-size: medium;
+}
+
+.why-we-rock > .grid-container > .item2 {
+    padding: 10%;
+    font-size: medium;
+}
+
+.why-we-rock > .grid-container > .item3 {
+    padding: 10%;
+    font-size: medium;
+}
+
+.why-we-rock > .grid-container > .item4 {
+    padding: 10%;
+    font-size: medium;
+}
+
+.why-we-rock > .grid-container > .item5 {
+    padding: 10%;
+    font-size: medium;
+}
+
+
+.why-we-rock > .grid-container > .item1 > h1 {
+    font-size: 50px;
+    color: #672717;
+    text-align: center;
+}
+
+.why-we-rock > .grid-container > .item2 > h1 {
+    font-size: 30px;
+    color: #672717;
+    text-align: center;
+}
+
+.why-we-rock > .grid-container > .item3 > h1 {
+    font-size: 30px;
+    color: #672717;
+    text-align: center;
+}
+
+.why-we-rock > .grid-container > .item4 > h1 {
+    font-size: 30px;
+    color: #672717;
+    text-align: center;
+}
+
+.why-we-rock > .grid-container > .item5 > h1 {
+    font-size: 30px;
+    color: #672717;
+    text-align: center;
+}
+
+.why-we-rock > .grid-container > .item2 .fa-solid,
+.item3 .fa-solid,
+.item4 .fa-solid,
+.item5 .fa-brands {
+    background-color: #672717; /* Brown background color for icons */
+    padding: 15px; /* Increase padding for larger icons */
+    border-radius: 50%; /* Make icons circular */
+    color: #fff; /* Icon color */
+    font-size: 50px; /* Increase font size for larger icons */
+    transform: translateX(100%);
+}
+
+.container > .yt-video {
+    grid-area: youtube;
+}
+
+/* Franchise Models */
+
+.franchise-models > .grid-container > .item1 {
+    padding-left: 20%;
+    padding-top: 20%;
+    border: 1px solid #672717;
+}
+
+.franchise-models > .grid-container > .item3 {
+    padding-right: 20%;
+    padding-top: 20%;
+}
+
+.franchise-models > .grid-container > .item2 > .title {
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.franchise-models > .grid-container > .item2 > .title > img {
+   /* padding-left: 25%; */
+    width: 100%;
+    height: 100%;
+}
+
+.franchise-models > .grid-container > .item1 > .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.franchise-models > .grid-container > .item1 > .definition {
+    margin-bottom: 5px;
+    color: #FFCF13;
+    font-size: large;
+    font-weight: bold;
+}
+
+.franchise-models > .grid-container > .item1 > .example {
+    margin-bottom: 5px;
+}
+
+.franchise-models > .grid-container > .item1 > .title > .store-icon {
+    background-color: #FFCF13;
+    fill: #672717;
+    color: #672717;
+    font-size: 50px;
+    border-radius: 50%;
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    padding: 10px; /* Increase padding to make the background bigger */
+}
+
+.franchise-models > .grid-container > .item1 > .description {
+    color: white;
+    font-size: large;
+}
+
+.franchise-models > .grid-container > .item3 > .description {
+    color: white;
+    font-size: large;
+}
+
+.franchise-models > .grid-container > .item3 > .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.franchise-models > .grid-container > .item3 > .definition {
+    margin-bottom: 5px;
+    color: #FFCF13;
+    font-size: large;
+    font-weight: bold;
+}
+
+.franchise-models > .grid-container > .item3 > .example {
+    margin-bottom: 5px;
+}
+
+.franchise-models > .grid-container > .item3 > .title > .store-icon {
+    background-color: #FFCF13;
+    fill: #672717;
+    color: #672717;
+    font-size: 50px;
+    border-radius: 50%;
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    padding: 10px; /* Increase padding to make the background bigger */
+}
+
+.franchise-models > .grid-container > .item1 { grid-area: fofo; }
+
+.franchise-models > .grid-container > .item2 { grid-area: model; }
+
+.franchise-models > .grid-container > .item3 { grid-area: coco; }
+
+.franchise-models > .grid-container {
+  display: grid;
+  grid-template-areas: 'fofo model coco';
+  grid-gap: 10px;
+  background-color: #672717;
+  padding: 10px;
+}
+
+.franchise-models > .grid-container > div {
+  background-color: #672717;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Outlets */
+
+.container > .outlets > .outlet > .row > .a { 
+    grid-area: outlet1;
+}
+
+.container > .outlets > .outlet > .row > .b { 
+    grid-area: outlet2;
+}
+
+.container > .outlets > .outlet > .row > .c { 
+    grid-area: outlet3;
+} 
+
+.outlets > .outlet > .row {
+    display: flex;
+    padding-left: 10%;
+}
+
+/* Create three equal columns that sit next to each other */
+.outlets > .outlet > .column {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px; /* Adjust the gap between columns */
+    margin-bottom: 10px; /* Adjust the gap between rows */
+}
+
+/* Remove right margin from the last column */
+.outlets > .outlet > .column:last-child {
+    margin-right: 0;
+}
+
+.outlets > .outlet > .row > .column > .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+    
+.outlets > .outlet > .row > .column > .button1 {
+    background-color: #672717;
+    color: #FFCF13;
+    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
+    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
+    border: none; 
+    transform: translateX(125%);
+}
+
+.outlets > .outlet > .row > .column > .button2 {
+    background-color: #672717;
+    color: #FFCF13;
+    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
+    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
+    border: none; 
+    transform: translateX(100%);
+}
+ 
+.outlets > .outlet > .row > .column > .button1:hover {
+    background-color: #FFCF13;
+    color: black;
+    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
+    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
+    border: none;
+}
+
+.outlets > .outlet > .row > .column > .button2:hover {
+    background-color: #FFCF13;
+    color: black;
+    border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
+    padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
+    border: none;
+}
+
+.outlets > .outlet > h1 {
+    text-align: center; 
+    font-size: 60px;
+    color: #575656;
+    grid-area: outlet1;
+}
+
+/* Franchise Owners */
+    
+@keyframes slide {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+}
+.animate-slide {
+    animation: slide 22s linear infinite; /* Adjust animation duration */
+  }
+/* Footer */
+
+.container > .footer {
+    grid-area: footer;
+}
+
+.footer > h3 {
+    color: #928781;
+    font-size: 25px;
+}
+
+.footer > h1 {
+    color: #000000;
+    font-size: 50px;
+}
+
+.footer > .button {
+       background-color: #672717;
+       color: white;
+       border-radius: 25px; /* adjust the value to make the rounding more or less prominent */ 
+       padding: 10px 20px; /* add some padding to the button content to make it look more spacious */
+       border: none;  
+       font-size: 10px;
+       text-align: center;
+       display: block;
+       margin: auto;
+}
+   
+.container > .footer .w-screen {
+    grid-area: f1;
+}
+
+/*.container {
+	display: flex;
+	flex-direction: row;
+} */
+
+
+
+@media only screen and (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+  :root {
+    font-size: 12px;
+}
+
+  .container {
+    display: flex ;
+    flex-direction: column;
+}
+
+.container > .coverPage > .cover-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .franchise-form > .grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .franchise-form > .grid-container > .item1 {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: auto;
+}
+
+.container > .franchise-form > .grid-container > .item2 {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(10%);
+}
+
+.franchise-form > .grid-container > .item2 > form > input[type=text] {
+  border-radius: 10px;
+  border: 1px solid #672717;
+  color: #672717;
+  width: 50%;
+  box-sizing: border-box;
+  /*padding: 10px;
+  margin-bottom: 10px; */
+  font-size: small;
+ /* transform: translateX(-30%); */
+}
+
+.franchise-form > .grid-container > .item1 > img {
+  transform: translateX(15%);
+}
+
+.franchise-form > .grid-container > .item2 > form {
+  transform: translateX(-10%);
+}
+
+.container > .why-we-rock > .grid-container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .container > .yt-video {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  width: auto;
+  }
+  
+  .franchise-owners > .grid-container > .item2 > .owner-image {
+    height: 70%;
+    width: 70%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    animation: scrollAnimation 20s linear infinite;
+}
+
+  .container > .franchise-models > .grid-container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .container > .outlets > .outlet > .row {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  }
+  
+  .container > .outlets > .outlet > .row > .column {
+    transform: translateX(5%);
+  }
+
+  .container > .franchise-owners > .grid-container > .item1 {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-30%);
+  }
+  
+  .container > .footer {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .container > .footer > h3 { font-size: 20px; }
+
+  .container > .footer > h1 { font-size: 25px; }
+
+ /* .container > .footer > button { height: auto; width: 10rem; transform: translateX(125%); } */
+
+  .container > .w-full {
+    display: flex;
+    flex-direction: column;
+  }
+}
