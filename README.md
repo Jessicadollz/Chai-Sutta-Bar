@@ -1,5 +1,5 @@
 
-# CHAI-SUTTA-BAR Website [CHAI-SUTTA-BAR Website](https://kishlaychandan.github.io/chai-sutta-bar/)
+# CHAI-SUTTA-BAR [CHAI-SUTTA-BAR Website](https://jessicadollz.github.io/Chai-Sutta-Bar-Major-Project-/index.html)
 
 Welcome to the official website of CHAI-SUTTA-BAR, your go-to destination for delightful chai and tasty snacks. 
 
@@ -48,7 +48,7 @@ Your privacy matters to us. Learn about how we collect, use, and protect your pe
 
 ---
 
-**Hosted Link:** [CHAI-SUTTA-BAR Website](https://kishlaychandan.github.io/chai-sutta-bar/)
+**Hosted Link:** [CHAI-SUTTA-BAR Website](https://jessicadollz.github.io/Chai-Sutta-Bar-Major-Project-/index.html)
 
 ---
 
